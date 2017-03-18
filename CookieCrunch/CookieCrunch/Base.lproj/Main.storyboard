@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="CookieCrunch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RKK-l4-S77">
+                                <rect key="frame" x="8" y="40" width="359" height="42"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xCW-hL-OWr">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3Y-Ol-pMo">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.71877023963730569" green="0.71877023963730569" blue="0.71877023963730569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-yo-DUF" userLabel="Target Label">
+                                                <rect key="frame" x="0.0" y="17.5" width="119.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.3979719883419689" green="0.3979719883419689" blue="0.3979719883419689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SQ6-aQ-cM5">
+                                        <rect key="frame" x="119.5" y="0.0" width="120" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pY6-kW-fPg" userLabel="Moves:">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.71877023963730569" green="0.71877023963730569" blue="0.71877023963730569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pp-le-i4n" userLabel="Moves Label">
+                                                <rect key="frame" x="0.0" y="17.5" width="120" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.3979719883419689" green="0.3979719883419689" blue="0.3979719883419689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-U7-nsf">
+                                        <rect key="frame" x="239.5" y="0.0" width="119.5" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhb-8T-LBM" userLabel="Score:">
+                                                <rect key="frame" x="0.0" y="0.0" width="119.5" height="17.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="14"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.71877023963730569" green="0.71877023963730569" blue="0.71877023963730569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lsl-eK-1Ym" userLabel="Score Label">
+                                                <rect key="frame" x="0.0" y="17.5" width="119.5" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="20"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.3979719883419689" green="0.3979719883419689" blue="0.3979719883419689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2KT-gR-Npf">
+                                <rect key="frame" x="0.0" y="221" width="375" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="mfJ-zd-qqZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="af8-Ea-Zb9">
+                                <rect key="frame" x="137" y="611" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7Nc-HW-GRK"/>
+                                    <constraint firstAttribute="height" constant="36" id="hpf-Tb-uoc"/>
+                                </constraints>
+                                <state key="normal" title="Shuffle" backgroundImage="Button">
+                                    <color key="titleColor" red="0.97670762523437715" green="1" blue="0.98968728120525917" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.49193185828119884" green="0.50366337435233155" blue="0.49846923560542566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Wbk-Q4-x5g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69515058289999998" green="0.69515058289999998" blue="0.69515058289999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2KT-gR-Npf" secondAttribute="trailing" id="0S2-h9-NJ0"/>
+                            <constraint firstItem="af8-Ea-Zb9" firstAttribute="centerX" secondItem="2KT-gR-Npf" secondAttribute="centerX" id="0x1-3S-83q"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="af8-Ea-Zb9" secondAttribute="bottom" constant="20" id="Nub-S2-O05"/>
+                            <constraint firstItem="2KT-gR-Npf" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="O9a-NY-0Vr"/>
+                            <constraint firstItem="RKK-l4-S77" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="20" id="RIy-Eb-Pcg"/>
+                            <constraint firstItem="2KT-gR-Npf" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="f7K-Yf-b44"/>
+                            <constraint firstAttribute="trailing" secondItem="RKK-l4-S77" secondAttribute="trailing" constant="8" id="uOq-vu-1B9"/>
+                            <constraint firstItem="RKK-l4-S77" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="8" id="ujv-XL-jgV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameOverPanel" destination="2KT-gR-Npf" id="l17-4j-AUu"/>
+                        <outlet property="movesLabel" destination="4Pp-le-i4n" id="6OG-9O-JK6"/>
+                        <outlet property="scoreLabel" destination="Lsl-eK-1Ym" id="bZC-yL-B0E"/>
+                        <outlet property="shuffleButton" destination="af8-Ea-Zb9" id="d3w-Yb-uuh"/>
+                        <outlet property="targetLabel" destination="CsC-yo-DUF" id="UEH-TN-A4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1572" y="-105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="16" height="16"/>
+    </resources>
+</document>
